@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+@import "./assets/styles/color.scss";
+@import "./assets/styles/common.scss";
+@import "./assets/styles/text.scss";
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: 'Preahvihear', sans-serif;
+  background-color: $colorBackground;
+}
