@@ -1,0 +1,56 @@
+.home-protfolio {
+  padding: 50px 0;
+  .protfolio-center{
+    max-width: 1200px;
+    .work-experience-section {
+      position: relative;
+      padding: 100px 20px;
+      overflow: hidden;
+      z-index: 0;
+      .circle-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 625px;
+        height: 700px;
+        background: radial-gradient(circle, rgba(122,84,255,0.4) 0%, rgba(18,18,30,0) 70%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .experience{
+        .card {
+          flex: 0 1 calc(50% - 10px);
+          background: #2C1250;
+          padding: 20px;
+          box-sizing: border-box;
+          border-radius: 8px;
+          border-top: 4px solid #4F228D;
+          color: #FFFFFF;
+          .card-text{
+            button{
+              background-color: #2C1250;
+              border: 1px solid #693B93;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
+        width: 15%;
+        border: 1px solid #693B93;
+        &:hover{
+          color: #FFFFFF
+        }
+      }
+    }
+  }
+}
