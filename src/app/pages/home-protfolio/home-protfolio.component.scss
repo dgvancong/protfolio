@@ -1,56 +1,141 @@
 .home-protfolio {
-  padding: 50px 0;
-  .protfolio-center{
-    max-width: 1200px;
-    .work-experience-section {
-      position: relative;
-      padding: 100px 20px;
-      overflow: hidden;
-      z-index: 0;
-      .circle-background {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 625px;
-        height: 700px;
-        background: radial-gradient(circle, rgba(122,84,255,0.4) 0%, rgba(18,18,30,0) 70%);
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        z-index: -1;
-      }
-      .experience{
-        .card {
-          flex: 0 1 calc(50% - 10px);
-          background: #2C1250;
-          padding: 20px;
-          box-sizing: border-box;
-          border-radius: 8px;
-          border-top: 4px solid #4F228D;
-          color: #FFFFFF;
-          .card-text{
-            button{
-              background-color: #2C1250;
-              border: 1px solid #693B93;
-              color: #FFFFFF;
+    padding: 50px 0;
+    .protfolio-center {
+        max-width: 1200px;
+        .work-experience-section {
+            position: relative;
+            padding: 100px 20px;
+            overflow: hidden;
+            z-index: 0;
+            .circle-background {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 625px;
+                height: 700px;
+                background: radial-gradient(circle, rgba(122, 84, 255, 0.4) 0%, rgba(18, 18, 30, 0) 70%);
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                z-index: -1;
             }
-          }
+            .experience {
+                .card {
+                    flex: 0 1 calc(50% - 10px);
+                    background: #2C1250;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    border-top: 4px solid #4F228D;
+                    color: #FFFFFF;
+                    .card-text {
+                        .btn-led-company {
+                            background-color: #2C1250;
+                            border: 1px solid #693B93;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            overflow: hidden;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                inset: 0;
+                                border-radius: inherit;
+                                padding: 2px;
+                                background: linear-gradient(90deg, #ff005e 20%, #ffb400 40%, #00f0ff 60%, #7b2cff 80%, #ff005e 100%);
+                                background-size: 300% 300%;
+                                animation: led-move 3s linear infinite;
+                                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                                -webkit-mask-composite: xor;
+                                mask-composite: exclude;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
-      }
-    }
-    .contact{
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #FFFFFF;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: 500;
-        width: 15%;
-        border: 1px solid #693B93;
-        &:hover{
-          color: #FFFFFF
+        .card-project {
+            margin-top: 8rem;
+            gap: 8rem;
+            .project {
+                position: relative;
+                display: flex;
+                align-items: center;
+                .featured {
+                    position: absolute;
+                    top: 36%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                    max-width: 814px;
+                    p {
+                        color: #9857D3;
+                    }
+                    .project-card {
+                        position: relative;
+                        padding: 1rem;
+                        z-index: 3;
+                        border-radius: 12px;
+                        background: linear-gradient(90deg, rgba(105, 59, 147, 0.95) 0%, rgb(121 152 173 / 70%) 77%, rgb(215 222 229 / 50%) 100%);
+                        backdrop-filter: blur(4px);
+                        color: #fff;
+                    }
+                }
+                .project-thumbli {
+                    background-color: #2C1250;
+                    z-index: 1;
+                    max-width: 440px;
+                    overflow: hidden;
+                    .circle-project {
+                        position: absolute;
+                        top: 50%;
+                        width: 600px;
+                        height: 600px;
+                        background: radial-gradient(circle, rgba(122, 84, 255, 0.4) 0%, rgba(18, 18, 30, 0) 70%);
+                        transform: translate(-50%, -50%);
+                        border-radius: 50%;
+                        z-index: 0;
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                .reverse {
+                    flex-direction: row-reverse;
+                }
+            }
         }
-      }
+        .contact {
+            .btn-led {
+                position: relative;
+                width: 174px;
+                padding: 12px 26px;
+                color: #fff;
+                overflow: hidden;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    border-radius: inherit;
+                    padding: 2px;
+                    background: linear-gradient(90deg, #ff005e 20%, #ffb400 40%, #00f0ff 60%, #7b2cff 80%, #ff005e 100%);
+                    background-size: 300% 300%;
+                    animation: led-move 3s linear infinite;
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    pointer-events: none;
+                }
+            }
+            .icon {
+                a {
+                    img {
+                        width: 22px;
+                    }
+                }
+            }
+        }
     }
-  }
 }

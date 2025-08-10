@@ -9,7 +9,17 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: 'Preahvihear', sans-serif;
+  font-family: 'Sarabun', sans-serif;
   background-color: $colorBackground;
   color: $colorTextWhite;
+  font-weight: inherit;
+  font-style: inherit;
+  letter-spacing: normal;
+  font-size: 16px;
+}
+
+@keyframes led-move {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
