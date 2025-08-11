@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeProtfolioComponent implements OnInit {
 
+  isLoading = true;
+  isOpening = false;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
+    setTimeout(() => {
+      this.isOpening = true;
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 3000);
+    }, 5000);
 
+  }
 }

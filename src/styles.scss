@@ -18,6 +18,103 @@ body {
   font-size: 16px;
 }
 
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 879px) {
+  .work-experience-section {
+    padding: 80px 20px;
+  }
+
+  .work-experience-section .experience .card-experience {
+    gap: 15px;
+  }
+
+  .work-experience-section .experience .card {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+    min-width: 300px;
+  }
+
+  .work-experience-section .experience .card .card-text {
+    margin-left: 15px;
+  }
+
+  .work-experience-section .experience .card .card-icon img {
+    width: 100px;
+  }
+
+  .work-experience-skill{
+    .text-work{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .work-experience-section {
+    padding: 60px 15px;
+  }
+
+  .work-experience-section .experience .card {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .work-experience-section .experience .card .card-text {
+    margin-left: 15px;
+  }
+
+  .work-experience-skill{
+    .text-work{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .work-experience-section {
+    padding: 40px 10px;
+  }
+
+  .work-experience-section .experience .card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .work-experience-section .experience .card .card-icon img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .work-experience-section .experience .card .card-text {
+    margin-left: 0;
+  }
+
+  .work-experience-section .experience .card .card-text h6 {
+    font-size: 16px;
+  }
+
+  .work-experience-section .experience .card .card-text p {
+    font-size: 13px;
+  }
+
+  .work-experience-section .experience .card .card-text .btn-led-company {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .work-experience-skill{
+    .text-work{
+      text-align: center;
+    }
+  }
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 @keyframes led-move {
   0%   { background-position: 0% 0%; }
   50%  { background-position: 100% 100%; }
