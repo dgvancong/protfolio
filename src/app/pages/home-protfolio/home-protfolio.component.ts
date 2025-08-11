@@ -19,6 +19,5 @@ export class HomeProtfolioComponent implements OnInit {
         this.isLoading = false;
       }, 3000);
     }, 5000);
-
   }
 }
