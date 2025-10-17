@@ -1,289 +1,375 @@
-<div class="home-protfolio-container">
+<div class="home-protfolio-container p-4 position-relative overflow-hidden">
 
   <div class="home-protfolio d-flex justify-content-center align-items-center">
     <div class="protfolio-center w-100 d-flex flex-column gap-5">
-      <div class="protfolio hero" role="main">
-        <div class="avatar-wrap" aria-hidden="true">
+      <div class="protfolio hero d-grid align-items-center" role="main">
+        <div class="avatar-wrap position-relative d-flex align-items-center justify-content-center" aria-hidden="true">
           <div class="circle-background"></div>
-          <div class="avatar-circle">
-            <img class="avatar-img" src="assets/image/dongvan.png" alt="avatar">
+          <div class="avatar-circle d-flex align-items-center justify-content-center position-relative">
+            <img class="avatar-img object-fit-cover" src="assets/image/dongvan.png" alt="avatar">
           </div>
-
-          <div class="intro" aria-hidden="true">
-            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="rgba(255,255,255,0.85)"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
-              <path d="M20 100 C60 30, 140 20, 170 40" />
-              <path d="M166 36 L155 44 M166 36 L158 24" />
+          <div class="intro position-absolute d-flex align-items-center gap-3" aria-hidden="true">
+            <svg
+              viewBox="0 0 200 120"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="rgba(255,255,255,0.85)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.6">
+              <path d="M20 100 C60 30, 140 20, 170 40"></path>
+              <path d="M166 36 L155 44 M166 36 L158 24"></path>
             </svg>
 
-            <div class="intro-text">Hello! I Am <span class="name">Dong Van Cong</span></div>
+            <div class="intro-text mt-4">
+              Hello! I Am
+              <span class="name me-2">Dong Van Cong</span>
+            </div>
           </div>
         </div>
-
         <div class="contents">
-          <div class="sub">A Front-end Developer </div>
-          <div class="big">
-            Judges a book by its
-            <span class="oval">
-              <span class="cover">cover</span>...
-            </span>
-          </div>
-          <p class="tagline">Because if the cover does not impress you what else can?</p>
+            <div class="sub">A Front-end Developer</div>
+            <div class="big">
+                Judges a book by its
+                <span class="oval">
+                    <span class="cover">cover</span>
+                    ...
+                </span>
+            </div>
+            <p class="tagline">
+                Because if the cover does not impress you what else
+    can?
+            </p>
         </div>
       </div>
 
-      <div class="about d-flex flex-column gap-3 mb-5 mt-5">
+      <div class="about d-flex flex-column gap-3 mt-5">
         <div class="introduce">
-          <h2>I'm a Software Engineer.</h2>
-          <p>Currently, I'm a Software Engineer at
-            <span class="facebook">
-              <img src="assets/image/hg-favicon-1.png" alt="Hg media" width="14px" />
-              HG MEDIA,
-            </span>
-          </p>
+            <h2>I'm a Software Engineer.</h2>
+            <p>
+              Currently, I'm a Software Engineer at
+              <span class="facebook">
+                <img src="assets/image/hg-favicon-1.png" alt="Hg media" width="14px">
+                HG MEDIA,
+              </span>
+            </p>
         </div>
 
         <div class="introduce-text">
-          I am currently a Frontend Developer with 2 years of experience in web interface development. After learning
-          about the Frontend Developer position at your company, I found the role to be a great fit for my career
+          I am currently a Frontend Developer with 2 years of experience in web
+          interface development. After learning
+          about the Frontend Developer position at your company, I found the
+          role to be a great fit for my career
           orientation and skill set. I have hands-on
-          experience with Angular, HTML/CSS/JavaScript, and have worked with tools such as Jira, Git, and Figma. I have
-          participated in several projects, taking responsibility for building user interfaces, integrating APIs, and
+          experience with Angular, HTML/CSS/JavaScript, and have worked with
+          tools such as Jira, Git, and Figma. I have
+          participated in several projects, taking responsibility for building
+          user interfaces, integrating APIs, and
           collaborating in
-          teams following the Agile methodology. With a solid technical foundation, a strong sense of responsibility,
-          and the ability to work independently, I believe I can make a meaningful contribution to your company.
+          teams following the Agile methodology. With a solid technical
+          foundation, a strong sense of responsibility,
+          and the ability to work independently, I believe I can make a
+          meaningful contribution to your company.
         </div>
       </div>
 
-      <div class="work-experience-section">
-        <div class="circle-background"></div>
-
-        <div class="work-experience-section">
-          <div class="circle-background"></div>
-
-          <div class="experience">
-            <h4>Work Experience</h4>
-            <div class="card-experience d-flex align-items-center gap-3 flex-wrap mt-4">
-              <div class="card">
-                <div class="d-flex align-items-center justify-content-between gap-3">
-                  <div class="card-icon">
-                    <img src="assets/image/hung-yen.jpeg" alt width="110px" />
-                  </div>
-                  <div class="card-text">
-                    <div>
-                      <h6 class="text-medium">Hung Yen University of Technology and Education</h6>
-                      <p class="text-regular">
-                        Take your client onboard seamlessly by our amazing tool of digital onboard process.
-                      </p>
-                    </div>
-                    <button class="rounded-2 text-medium p-2 btn-led-company">LEARN MORE</button>
-                  </div>
-                </div>
+      <section class="partners-section d-flex justify-content-between align-items-center gap-5">
+        <div class="flex-grow-1">
+          <h2 class="section-title">Skills & Tools</h2>
+          <p class="parent-content">
+            Chúng tôi hợp tác với các đối tác hàng đầu trong ngành để mang đến những giải pháp tốt nhất cho khách hàng.
+          </p>
+        </div>
+        <div class="partners-grid gap-4 d-flex justify-content-between">
+          <!-- Cột 1 -->
+          <div class="vertical-column column-1 d-flex flex-column align-items-center gap-4">
+            <div class="partner-item d-flex flex-column align-items-center justify-content-center text-center" *ngFor="let partner of firstColumnPartners">
+              <div class="logo-container d-flex flex-column align-items-center justify-content-center position-relative bitfinex">
+                <img [src]="partner.logo" [alt]="partner.name">
+                <span class="logo-text">{{ partner.name }}</span>
               </div>
+            </div>
+          </div>
 
-              <div class="card d-flex">
-                <div class="d-flex align-items-center justify-content-between gap-3">
-                  <div class="card-icon">
-                    <img src="assets/image/viettel.jpg" alt width="110px" />
-                  </div>
-                  <div class="card-text">
-                    <div>
-                      <h6 class="text-medium">Viettel Software</h6>
-                      <p>
-                        Take your client onboard seamlessly by our amazing tool of digital onboard process.
-                      </p>
-                    </div>
-                    <button class="rounded-2 text-medium p-2 btn-led-company">LEARN MORE</button>
-                  </div>
-                </div>
+          <!-- Cột 2 -->
+          <div class="vertical-column d-flex flex-column align-items-center gap-4">
+            <div class="partner-item d-flex flex-column align-items-center justify-content-center text-center" *ngFor="let partner of secondColumnPartners">
+              <div class="logo-container d-flex flex-column align-items-center justify-content-center position-relative bitfinex">
+                <img [src]="partner.logo" [alt]="partner.name">
+                <span class="logo-text">{{ partner.name }}</span>
               </div>
-
-              <div class="card">
-                <div class="d-flex align-items-center justify-content-between gap-3">
-                  <div class="card-icon">
-                    <img src="assets/image/lifesup.jpg" alt width="110px" />
-                  </div>
-                  <div class="card-text">
-                    <div>
-                      <h6 class="text-medium">LIFESUP Software</h6>
-                      <p>
-                        Take your client onboard seamlessly by our amazing tool of digital onboard process.
-                      </p>
-                    </div>
-                    <button class="rounded-2 text-medium p-2 btn-led-company">LEARN MORE</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card d-flex">
-                <div class="d-flex align-items-center justify-content-between gap-3">
-                  <div class="card-icon">
-                    <img src="assets/image/logoHG_final-04.png" alt width="110px" />
-                  </div>
-                  <div class="card-text">
-                    <div>
-                      <h6 class="text-medium">HG MEDIA</h6>
-                      <p>
-                        Take your client onboard seamlessly by our amazing tool of digital onboard process.
-                      </p>
-                    </div>
-                    <button class="rounded-2 text-medium p-2 btn-led-company">LEARN MORE</button>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-
-      </div>
-
-      <section class="work-experience-skill">
-        <div class="text-work d-flex justify-content-center align-items-center">
-          I'm currently looking to join a cross-functional team that values improving people's lives through accessible
-          design
-        </div>
-        <!-- <div class="skill">
-          <div class="container">
-            <div class="top-icons">
-              <img src="figma.png" alt="Figma">
-              <img src="react.png" alt="React">
-              <img src="c.png" alt="C">
-              <img src="node.png" alt="NodeJS">
-              <img src="redux.png" alt="Redux">
-              <img src="js.png" alt="JavaScript">
-              <img src="css.png" alt="CSS">
-            </div>
-
-            <svg class="curves" viewBox="0 0 500 200">
-              <path d="M50,200 Q250,50 450,200" stroke="rgba(255,255,255,0.2)" fill="none" />
-            </svg>
-
-            <div class="center-circle">
-              <span class="logo">Î£</span>
-            </div>
-
-            <div class="orbit orbit1"></div>
-            <div class="orbit orbit2"></div>
-            <div class="orbit orbit3"></div>
-          </div>
-        </div> -->
       </section>
 
-      <section class="card-project d-flex flex-column">
-        <div class="project">
+      <div class="work-experience-section">
+          <div class="circle-background"></div>
+
+
+          <div class="work-experience-section">
+              <div class="circle-background"></div>
+
+
+              <div class="experience">
+                  <h4>Work Experience</h4>
+                  <div class="card-experience d-flex align-items-center gap-3 flex-wrap mt-4">
+                      <div class="card">
+                          <div class="d-flex align-items-center justify-content-between gap-3">
+                              <div class="card-icon">
+                                  <img
+                                      src="assets/image/hung-yen.jpeg"
+                                      alt
+                                      width="110px"
+                                  >
+                              </div>
+                              <div class="card-text">
+                                  <div>
+                                      <h6 class="text-medium">
+                                          Hung Yen University of Technology
+                  and Education
+                                      </h6>
+                                      <p class="text-regular">
+                                          Take your client onboard seamlessly by our amazing tool
+                  of digital onboard process.
+                                      </p>
+                                  </div>
+                                  <button class="rounded-2 text-medium p-2 btn-led-company">LEARN
+                MORE</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="card d-flex">
+                          <div class="d-flex align-items-center justify-content-between gap-3">
+                              <div class="card-icon">
+                                  <img
+                                      src="assets/image/viettel.jpg"
+                                      alt
+                                      width="110px"
+                                  >
+                              </div>
+                              <div class="card-text">
+                                  <div>
+                                      <h6 class="text-medium">Viettel Software</h6>
+                                      <p>
+                                          Take your client onboard seamlessly by our amazing tool
+                  of digital onboard process.
+                                      </p>
+                                  </div>
+                                  <button class="rounded-2 text-medium p-2 btn-led-company">LEARN
+                MORE</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="card">
+                          <div class="d-flex align-items-center justify-content-between gap-3">
+                              <div class="card-icon">
+                                  <img
+                                      src="assets/image/lifesup.jpg"
+                                      alt
+                                      width="110px"
+                                  >
+                              </div>
+                              <div class="card-text">
+                                  <div>
+                                      <h6 class="text-medium">LIFESUP Software</h6>
+                                      <p>
+                                          Take your client onboard seamlessly by our amazing tool
+                  of digital onboard process.
+                                      </p>
+                                  </div>
+                                  <button class="rounded-2 text-medium p-2 btn-led-company">LEARN
+                MORE</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="card d-flex">
+                          <div class="d-flex align-items-center justify-content-between gap-3">
+                              <div class="card-icon">
+                                  <img
+                                      src="assets/image/logoHG_final-04.png"
+                                      alt
+                                      width="110px"
+                                  >
+                              </div>
+                              <div class="card-text">
+                                  <div>
+                                      <h6 class="text-medium">HG MEDIA</h6>
+                                      <p>
+                                          Take your client onboard seamlessly by our amazing tool
+                  of digital onboard process.
+                                      </p>
+                                  </div>
+                                  <button class="rounded-2 text-medium p-2 btn-led-company">LEARN
+                MORE</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+
+      <section class="card-project d-flex flex-column mt-2 gap-2">
+        <div class="project d-flex position-relative align-items-center">
           <div class="project-thumbli p-3 rounded-3 ms-auto">
-            <div class="circle-project" style="left: 80%;"></div>
-            <img src="assets/image/example-project.png" alt="" style="transform: translate(14px, 14px);">
+            <div
+              class="circle-project"
+              style="left: 80%;">
+            </div>
+            <img
+              src="assets/image/example-project.png"
+              alt
+              style="transform: translate(14px, 14px);">
           </div>
           <div class="featured start-0">
             <p class="m-0 bold-text size-regular">Featured Project</p>
             <h5 class="m-0 bold-text">Example Project</h5>
             <div class="project-card p-3 rounded-2 mt-4">
-              A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played
-              tracks, and detailed audio information about each track. Create and save new playlists of recommended
+              A web app for visualizing personalized Spotify data. View your top
+              artists, top tracks, recently played
+              tracks, and detailed audio information about each track. Create
+              and save new playlists of recommended
               tracks based on your existing playlists and more.
             </div>
           </div>
         </div>
 
-        <div class="project reverse">
+        <div class="project d-flex position-relative align-items-center reverse">
           <div class="featured end-0">
             <p class="m-0 bold-text size-regular text-end">Featured Project</p>
             <h5 class="m-0 bold-text text-end">Example Project</h5>
             <div class="project-card p-3 rounded-2 mt-4">
-              A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played
-              tracks, and detailed audio information about each track. Create and save new playlists of recommended
+              A web app for visualizing personalized Spotify data. View your top
+              artists, top tracks, recently played
+              tracks, and detailed audio information about each track. Create
+              and save new playlists of recommended
               tracks based on your existing playlists and more.
             </div>
           </div>
           <div class="project-thumbli p-3 rounded-3 me-auto">
-            <div class="circle-project" style="left: 18%;"></div>
-            <img src="assets/image/example-project.png" alt="" style="transform: translate(-14px, 14px);">
+            <div
+              class="circle-project"
+              style="left: 18%;">
+            </div>
+            <img
+              src="assets/image/example-project.png"
+              alt
+              style="transform: translate(-14px, 14px);">
           </div>
         </div>
 
-        <div class="project">
+        <div class="project d-flex position-relative align-items-center">
           <div class="project-thumbli p-3 rounded-3 ms-auto">
-            <div class="circle-project" style="left: 80%;"></div>
-            <img src="assets/image/example-project.png" alt="" style="transform: translate(14px, 14px);">
+            <div
+              class="circle-project"
+              style="left: 80%;">
+            </div>
+            <img
+              src="assets/image/example-project.png"
+              alt
+              style="transform: translate(14px, 14px);">
           </div>
           <div class="featured start-0">
             <p class="m-0 bold-text size-regular">Featured Project</p>
             <h5 class="m-0 bold-text">Example Project</h5>
             <div class="project-card p-3 rounded-2 mt-4">
-              A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played
-              tracks, and detailed audio information about each track. Create and save new playlists of recommended
+              A web app for visualizing personalized Spotify data. View your top
+              artists, top tracks, recently played
+              tracks, and detailed audio information about each track. Create
+              and save new playlists of recommended
               tracks based on your existing playlists and more.
             </div>
           </div>
         </div>
 
-        <div class="project reverse">
+        <div class="project d-flex position-relative align-items-center reverse">
           <div class="featured end-0">
             <p class="m-0 bold-text size-regular text-end">Featured Project</p>
             <h5 class="m-0 bold-text text-end">Example Project</h5>
             <div class="project-card p-3 rounded-2 mt-4">
-              A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played
-              tracks, and detailed audio information about each track. Create and save new playlists of recommended
+              A web app for visualizing personalized Spotify data. View your top
+              artists, top tracks, recently played
+              tracks, and detailed audio information about each track. Create
+              and save new playlists of recommended
               tracks based on your existing playlists and more.
             </div>
           </div>
           <div class="project-thumbli p-3 rounded-3 me-auto">
-            <div class="circle-project" style="left: 18%;"></div>
-            <img src="assets/image/example-project.png" alt="" style="transform: translate(-14px, 14px);">
+            <div
+              class="circle-project"
+              style="left: 18%;">
+            </div>
+            <img
+              src="assets/image/example-project.png"
+              alt
+              style="transform: translate(-14px, 14px);">
           </div>
         </div>
       </section>
 
       <div class="contact d-flex flex-column gap-4 mt-5">
         <h4>Contact</h4>
-
         <div class="my-self">
           <p>
-            Continuously striving to improve technical expertise and professional skills to develop optimized,
-            user-friendly products. Aspiring to participate in large-scale projects and gradually advance to the
+            Continuously striving to improve technical expertise and
+            professional skills to develop optimized,
+            user-friendly products. Aspiring to participate in large-scale
+            projects and gradually advance to the
             position of Senior Frontend Developer, aiming to enhance
             product quality and contribute effectively to the team.
           </p>
-
-          <p>dongvancong&#64;gmail.com</p>
-
+          <p>dongvancong24&#64;gmail.com</p>
           <p>+84 334 624 356</p>
         </div>
-
-        <a href="assets/styles/FrontEnd-Dong-Van-Cong.pdf" download="CV-Dong-Van-Cong.pdf"
-          class="btn-led rounded-2 text-medium bold-text text-decoration-none d-inline-block text-center">DOWNLOAD
-          CV</a>
-
+        <a
+          href="assets/styles/CV_FrontenDeveloper.Angular_DongVanCong.pdf"
+          download="CV_FrontenDeveloper_DongVanCong.pdf"
+          class="btn-led rounded-2 text-medium bold-text text-decoration-none d-inline-block text-center">
+          DOWNLOAD CV
+        </a>
         <div class="icon d-flex align-items-center gap-4 cur-pointer">
-          <a href="https://www.facebook.com/dgvan.cong" target="_blank">
-            <img src="assets/image/Facebook.png" alt="Facebook" />
-          </a>
-
-          <a href="https://github.com/dgvancong" target="_blank">
-            <img src="assets/image/github.jpg" alt="GitHub" />
+          <a
+            href="https://www.facebook.com/dgvan.cong"
+            target="_blank">
+            <img src="assets/image/Facebook.png" alt="Facebook">
           </a>
 
           <a
-            href="mailto:dongvancong24-email@gmail.com?subject=á»¨ng tuyá»ƒn Frontend&body=ChÃ o anh/chá»‹, em xin á»©ng tuyá»ƒn vÃ o vá»‹ trÃ­...">
-            <img src="assets/image/Gmail_icon.png" alt="Gmail" />
+            href="https://github.com/dgvancong"
+            target="_blank">
+            <img src="assets/image/github.jpg" alt="GitHub">
+          </a>
+
+          <a href="mailto:dongvancong24-email@gmail.com?subject=á»¨ng tuyá»ƒn Frontend&body=ChÃ o anh/chá»‹, em xin á»©ng tuyá»ƒn vÃ o vá»‹ trÃ­...">
+            <img src="assets/image/Gmail_icon.png" alt="Gmail">
           </a>
 
           <a href="https://t.me/+84334624356" target="_blank">
-            <img src="assets/image/Telegram.png" alt="Telegram" />
+            <img src="assets/image/Telegram.png" alt="Telegram">
           </a>
         </div>
       </div>
+
     </div>
   </div>
 
   <!-- Overlay Loading -->
-  <div *ngIf="isLoading" class="loading-overlay" [class.open]="isOpening">
+  <!-- <div *ngIf="isLoading" class="loading-overlay" [class.open]="isOpening">
     <div class="panel left"></div>
     <div class="panel right"></div>
 
-    <div class="loading-content" *ngIf="!isOpening">
+    <div class="loading-content d-flex flex-column align-items-center position-absolute w-100 h-auto text-white" *ngIf="!isOpening">
       <div class="loading-content" *ngIf="!isOpening">
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 400 400">
           <defs>
@@ -300,6 +386,6 @@
         </svg>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>
